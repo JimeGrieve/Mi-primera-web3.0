@@ -1,0 +1,137 @@
+html {
+
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+
+
+.page-container {
+    
+
+     width: 80vw;
+    margin: auto;
+    display:grid ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto ; 
+    grid-template-areas:"header header header"
+    "caracteristicas caracteristicas caracteristicas"
+
+ 
+
+}
+
+
+
+header{
+grid-area: header;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+.header-isologo {
+
+display: flex;
+align-items: center;
+
+}
+.header p{
+font-family: "Monda", sans-serif;
+
+}
+ header h1 {
+   font-family: "Rightoous", cursive;
+font-size: 3.rem;
+
+ }
+.nav-dove{
+ transition-property:transform color ;
+    transition-duration: 1.5s;
+
+
+}
+    
+    
+.nave-dove:hover{
+
+    color: blueviolet;
+   transform: rotateY(180deg);
+}
+
+
+ nav ul li {
+
+    list-style-type: none;
+    display: inline;
+   }
+
+nav ul li a {
+
+    text-decoration: none;
+    color: black;
+    padding: .4rem;
+
+}
+
+nav ul li a:hover {
+
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+
+
+}
+.caracteristicas-container {
+    grid-area: caracteristicas;
+    text-align: center;
+ 
+}
+
+.caracteristicas-container h2 {
+font-size: 3rem;
+text-align: center;
+
+}
+
+.caracteristicas {
+columns: 3;
+gap: 2rem;
+column-rule: solid blue 1px;
+
+}
+.caracteristicas p:first-of-type::first-letter{
+
+font-size: 3rem;
+font-family: 'Times New Roman', Times, serif;
+line-height: 3rem;
+float: left;
+padding: 0 .3 rem 0.6rem;
+background-color: blue;
+margin-right: .5rem;
+}
+
+
+.container-breeds {
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ; 
+    grid-template-rows: minmax(auto, 1fr);     
+    gap:1rem;
+    
+  }
+
+  p{
+    max-width: 40ch;
+  }
+
+  .card {
+    display: flex;
+    padding: 0.5rem 2rem;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+    background-color: orchid;
+  }
